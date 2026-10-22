@@ -5,7 +5,7 @@ BORRA el archivo de salida cuando termines de pegar."""
 import json, os, importlib.util
 
 P = r"C:\Users\juanc\OneDrive\Documentos\Claude\Projects"
-out = os.path.join(os.path.expanduser("~"), "Desktop", "SECRETOS_NUBE_BORRAR_DESPUES.txt")
+out = r"C:\Users\juanc\.claude\secrets\variables_nube_BORRAR_DESPUES.txt"
 o = json.load(open(r"C:\Users\juanc\.claude\secrets\odoo_credentials.json", encoding="utf-8"))
 lines = [f"ODOO_URL={o['url']}", f"ODOO_DB={o['db']}", f"ODOO_USER={o['username']}", f"ODOO_API_KEY={o['api_key']}"]
 
